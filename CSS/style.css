@@ -1,3 +1,24 @@
 #jumbotron {
     background: #ecf1f5 url("/IMG/mountains-bg.png") no-repeat center / contain;
-  }
+}
+
+#moq{
+  font-family: 'Lobster', sans-serif;
+}
+
+#the_venue{
+  display: flex;
+}
+
+#gmap{
+  margin-left: 3em;
+}
+
+#venue_pic{
+  align-self: flex-end;
+  margin-right: 3em;
+}
+
+body{
+  scroll-behavior: smooth;
+}
