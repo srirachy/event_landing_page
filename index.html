@@ -14,7 +14,9 @@
     <!-- google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <!-- fab icons -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
 
     <title>Hello, world!</title>
   </head>
@@ -42,9 +44,9 @@
     <div class="col p-5 mb-3 text-center" id="jumbotron">
       <h1 class="display-4 fw-bold">Clear Statement about Your Event</h1>
         <p class="fs-4 text-muted">Secondary header providing additional information</p>
-      <button class="btn btn-dark btn-lg">GET THE TICKET</button>
+        <br>
+      <button class="btn btn-dark btn-lg mb-5">GET THE TICKET</button>
     </div>
-
     <!-- speaker segment -->
     <div class="container">
       <div class="row">
@@ -56,36 +58,36 @@
           </div>
         </div>
       </div>
-      <!-- columns -->
+      <!-- speaker columns -->
       <div class="row">
         <div class="col">
           <img src="IMG/mountains-bg.png" class="mw-100 rounded-3" alt="default image">
-          <h3>Ruby Jennings</h3>
+          <h3 class="fw-bold">Ruby Jennings</h3>
           <p class="text-muted">Product Manager at Moqups. Runner, parent and coffee lover.</p>
           <p class="text-muted">@username</p>
         </div>
         <div class="col">
           <img src="IMG/mountains-bg.png" class="mw-100 rounded-3" alt="default image">
-          <h3>Leon Hanson</h3>
+          <h3 class="fw-bold">Leon Hanson</h3>
           <p class="text-muted">Sales Manager at Moqups. Runner, parent and coffee lover.</p>
           <p class="text-muted">@username</p>
         </div>
         <div class="col">
           <img src="IMG/mountains-bg.png" class="mw-100 rounded-3" alt="default image">
-          <h3>Meghan Stone</h3>
+          <h3 class="fw-bold">Meghan Stone</h3>
           <p class="text-muted">Marketing Specialist at Moqups. Runner, parent and coffe lover.</p>
           <p class="text-muted">@username</p>
         </div>
         <div class="col">
           <img src="IMG/mountains-bg.png" class="mw-100 rounded-3" alt="default image">
-          <h3>Willie Perkins</h3>
+          <h3 class="fw-bold">Willie Perkins</h3>
           <p class="text-muted">UX Engineer at Moqups. Runner, parent and coffee lover.</p>
           <p class="text-muted">@username</p>
         </div>
       </div>
     </div>
+    <hr class="border border-1 border-dark" width="100%">
     <!-- ticket segment -->
-    <hr>
     <div class="container">
       <div class="row">
         <div class="col">
@@ -99,28 +101,31 @@
         </div>
       </div>
     </div>
-    <hr>
+    <hr class="border border-1 border-dark" width="100%">
     <!-- venue section -->
-    <div class="row">
-      <div class="col" id="gmap">
-        <h3 class="text-capitalize">the venue</h3>
+    <div class="row" id="the_venue">
+      <div class="col mt-4 mb-4" id="gmap">
+        <h3 class="text-capitalize fw-bold" id="venue_title">the venue</h3>
         <br>
-        <span>Our event will be held at the <b>Bitwise Industries at the Bitwise South Stadium 700 Van Ness Ave, Fresno, CA.</b></span>
+        <span id="venue_text">Our event will be held at <b>Bitwise Industries at the Bitwise South Stadium 700 Van Ness Ave, Fresno, CA.</b></span>
         <br><br><br>
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3197.6089629606026!2d-119.78802294853556!3d36.73195157913864!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80945e26d4340503%3A0xb32dda71cf0730a0!2sBitwise%20South%20Stadium!5e0!3m2!1sen!2sus!4v1643690620358!5m2!1sen!2sus" 
-          width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy">
+          width="100%" height="300px" style="border:0;" allowfullscreen="" loading="lazy">
         </iframe>
       </div>
-      <div class="col" id="venue_pic">
-        <img src="IMG/mountains-bg.png" class="mw-100 rounded-3" alt="default image">
+      <div class="col mt-4 mb-4" id="venue_pic">
+        <img src="IMG/mountains-bg.png" height="100%" width="100%" class="mw-100 rounded-3" alt="default image">
       </div>
     </div>
-  </div>
-  <hr>
-  <!-- footer -->
-  <footer>
-    a
-  </footer>
+
+    <hr class="border border-1 border-dark" width="100%">
+    <!-- footer -->
+    <footer class="page-footer">
+      <i class="fab fa-twitter fa-2x"></i>
+      <i class="fab fa-instagram fa-2x" id="ig_icon"></i>
+      <i class="fab fa-facebook-square fa-2x" id="fb_icon"></i>
+      <span id="footer_text">&copy;<script>document.write(new Date().getFullYear())</script> Moqups</span>
+    </footer>
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
   </body>
