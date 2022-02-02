@@ -7,13 +7,14 @@ body{
 }
 
 #jumbotron {
-    background: #ecf1f5 url("/IMG/mountains-bg.png") no-repeat center / contain;
+  background: #ecf1f5 url("/IMG/mountains-bg.png") no-repeat center / contain;
 }
 
 #the_venue{
   display: flex;
   flex-direction: row;
   align-items: flex-end;
+  width: 100%;
 }
 
 #gmap{
