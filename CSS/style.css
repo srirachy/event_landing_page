@@ -1,3 +1,42 @@
+body{
+  scroll-behavior: smooth;
+}
+
+#moq{
+  font-family: 'Lobster', sans-serif;
+}
+
 #jumbotron {
-    background: #ecf1f5 url("/IMG/mountains-bg.png") no-repeat center / contain;
-  }
+  background: #ecf1f5 url("/IMG/mountains-bg.png") no-repeat center / contain;
+}
+
+#the_venue{
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  width: 100%;
+}
+
+#gmap{
+  height: 450px;
+  flex-direction: column;
+  margin-left: 2em;
+}
+
+#venue_pic{
+  height: 450px;
+  margin-right: 2em;
+}
+
+#copyright_text{
+  margin-bottom: 3px;
+}
+
+.fab{
+  margin-left: 30px;
+}
+
+#footer_text{
+  float: right;
+  margin-right: 30px;
+}
